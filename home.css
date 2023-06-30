@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box; /*No más grande de lo que yo diga*/
+  }
+  body {
+    font-family: Orbitron, sans-serif;
+    margin: 0;
+  }
+  h1 {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    /* max-width: 600px; */
+    text-shadow: 2px 2px 0px #00a9de;
+    z-index: 9999;
+  }
+  p {
+    font-size: 14px;
+    color: white;
+    text-shadow: 1px 1px 0px #00a9de;
+    padding: 10px 30px;
+  }
+  .container {
+    max-width: 1400px;
+    margin: auto;
+  }
+  header {
+    background-color: rgba(0, 0, 0, 0.795);
+  }
+  header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    color: #00a9de;
+  }
+  header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+  }
+  header a {
+    padding: 5px 12px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  .home{
+    color: #00a9de
+  }
+  header a:hover {
+    color: #00a9de;
+    text-shadow: 2px 2px 0px #fff;
+  }
+  #presentation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 120vh;
+    background-color: #000;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+  }
+  #presentation h1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -35px;
+  }
+  #presentation p {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+  }
+  footer {
+    background-color: rgb(0, 0, 0);
+  }
+  footer p {
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    text-shadow: 1px 1px 0px #00a9de;
+  }
+  @media (min-width: 720px) {
+    header {
+      position: fixed;
+      width: 100%;
+      z-index: 100;
+    }
+    header .container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    header nav {
+      flex-direction: row;
+      padding-bottom: 0;
+      padding-right: 20px;
+    }
+    #presentation h1 {
+      font-size: 40px;
+      top: 25%;
+    }
+    #presentation p {
+      font-size: 16px;
+      top: 25%;
+    }
+    #presentation form {
+      margin-top: 7%;
+    }           
+  }
